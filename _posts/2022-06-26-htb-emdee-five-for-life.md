@@ -302,7 +302,4 @@ It's times like this that remind me that [it's okay to use writeups](https://www
 
 Thanks for reading! Be sure to come back to read my writeup on "Heist"!
 
-
-Thanks for reading! Be sure to come back to read my writeup on "Heist"!
-
 ![148d5c56eb68815bb589c42a3b9da574.png](/assets/img/emdee-five-for-life/6421a9e3bea0497e914951adb3f79a2d.png)
