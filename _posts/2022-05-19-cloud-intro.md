@@ -58,3 +58,4 @@ FaaS or serverless applications still run on servers, as do all these models of 
 > Also, serverless functions scale up or duplicate, as more people use the application — imagine if the tenant's dining room could expand on-demand when more people come over for dinner! Learn more about serverless computing (FaaS).
 
 Now that we have an understanding of what the cloud is, how it works, and what it does, we can take a closer look at cloud architecture and how it could be attacked. Always remember two things: The first being that **The cloud is just someone else's computer.** and to always ask better questions.
+
