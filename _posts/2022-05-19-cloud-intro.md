@@ -2,8 +2,6 @@
 title: "The Cloud: A Beginner's Look"
 date: 2022-05-19
 ---
-The Cloud (Blog)
-
 # Background
 
 About 20 years ago, the world became a lot more "plugged in". The turn of the century brought the "dot com" era, and many businesses found that outreach was a lot easier to achieve when their advertisements, products, and services could be on the screens of the people at home all across the world.
