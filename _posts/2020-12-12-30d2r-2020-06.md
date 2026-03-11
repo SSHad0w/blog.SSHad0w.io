@@ -1,0 +1,69 @@
+---
+layout: post
+title: "30D2R - June: Introduction to CTFs"
+date: 2020-12-12
+categories: ['30D2R']
+---
+This post is a part of my [30 Days 2 Root](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) challenge series.
+Essentially, I am trying to learn the basics of a different facet of cybersecurity each month. [Click here](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) to learn about how the challenge works, or tell me what I should study next!
+
+Capture the Flag competitions are computer challenges for people in Cybersecurity that help security enthusiasts hone their skills, meet new people, and try new things. Think of these competitions as a sandbox for people to play in with minimal risk to real machines or people in an a realistic setting.
+
+While CTFs can have defensive or forensic aspects to them, they are primarily designed for hackers to test their skills. Since June marked the halfway point in my 30 Days to Root Challenge, I figured I might as well take some time to test my skills. 
+
+
+### Sites
+There are many sites to play CTFs. My favorite is HackTheBox, but there are many others. Here are some examples:
+
+[HackThebox](Hackthebox.eu)
+[TryHackMe](TryHackMe.com)
+
+There are two different types of CTFs: live CTFs, and Boot 2 Root CTFs. The B2R CTFs are hosted on a virtual machine and typically are accessed and activated on the website, and there is a VPN to access the server side virtual machine. 
+
+In live CTFs, there are event organizers that have a web page with all of the challenges available. These CTFs have a set start and end time, and teams are more likley to participate than a single person, but single-person teams are typically welcomed as well.
+
+### Boot 2 Root CTF Methodology
+
+Typically the methodology of a Boot 2 Root CTF is starting at a webpage to understand the functionality of the machine, and scan further to find vulnerabilities. From there, checking to see if there have been any recent [CVEs](https://cve.mitre.org) that may be related to the machine. Once accessed, pivoting may be required.
+
+![B2R Methodology](/assets/img/30d2r-2020-06/img_871c0660a071.png)
+
+### Live CTF Methodology
+
+Live CTFs are typically jeopardy style CTFs. This means that each of the challenges are separated into categories that can be chosen from and completed individually. 
+
+![Example of jeopardy CTF](/assets/img/30d2r-2020-06/img_454f071fc796.jpg)
+
+This style can be helpful for teams to split up and focus on the things that they specialize in. For solo CTF players, this can help identify weaknesses and gaps in their knowledge.
+
+### How do I get started?
+
+The answer to this is one simple word: Writeups! Reading writeups/watching solution videos is the number one way to get better at CTFs. 
+
+What is a writeup? At the end of every CTF, the people who created the CTF, or the participants tell how they solved the challenges in the CTF. Once these are posted, the people who didn't understand the challenge can go and read the answer so they can better understand similar challenges in the future.
+
+The thing is- nothing is stopping you from reading writeups of CTFs that you were never in! If you watch/read enough solutions, you begin to adopt a methodology for that specific type of challenge when you see it in a CTF. [Here's a good starting place.](https://medium.com/ctf-writeups)
+
+[Here's another one.](https://ctftime.org/event/914/tasks/)
+
+Those are just a few writeups, but there are literally thousands of writeups online! You can learn any skill by simply searching the desired topic and the word "writeup". [It's as simple as that!](https://www.google.com/search?q=SMB+writeup)
+
+Since I use HackTheBox a lot, my favorite site for writeups is [ippsec.rocks](ippsec.rocks). He is amazing at explanations!
+
+Once you begin to explore the world of CTFs, you won't be able to stop. If you get good enough, you can even translate it into financial gain by playing CTFs that you win money for, or getting a job as a Penetration Tester!
+
+### Resources
+
+[Here's a video from an amazing Youtube channel](https://www.youtube.com/watch?v=Lus7aNf2xDg)
+
+[Another video from the same channel about CTFs](https://www.youtube.com/watch?v=L2C8rVO2lAg)
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+---
+layout: post
+title: "30D2R - May: Python"
+date: 2020-12-11
+categories: ['30D2R']
+---
+This post is a part of my [30 Days 2 Root](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) challenge series.
+Essentially, I am trying to learn the basics of a different facet of cybersecurity each month. [Click here](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) to learn about how the challenge works, or tell me what I should study next!
+
+One of the most lightweight, accessible, easy to learn programing languages in all of InfoSec has been learning Python. This powerful language has dominated the first few decades of the 21st century and has been a skill in high demand for anyone in any technical job.
+
+Even though Python can be used for things like web development, back end development, software development, and data science, we will focus on Python scripting, as most hackers are well versed in scripting in this interpreted language.
+
+### Networking
+
+Imagine you're a penetration tester. You just got your first reverse shell back and you've found that you will be detected if you download anything like Nmap. What do you do? You have to build your own port scanner. 
+
+The Scapy module Python can be used to create a networking tools like port scanners on the fly when Nmap isn't available in the post exploitation phase. There's tons of classes and videos about this online. 
+
+![Scapy Module](/assets/img/30d2r-2020-05/img_06371c80a71e.png)
+
+### On the inside
+
+Python can also interact with files. In a traditional use of python, this could be used to unzip or rename a large amount of files. In the mindset of a hacker, one could use a local instance of Python to download specific files in an attempt to gain a shell, or for data exfiltration.
+
+### Payloads and exploits
+Just as Python can be used to write useful automation scripts, it can also be used to write exploits. if a target system has a Python install, the attacker can write a Python script that does the work for them. Even if the target machine does not have a Python installation, tools can still be written in Python to help automate the exploitation phase.
+
+### Persistence
+Once on the network, Python can be used to establish persistence with python-like crontabs that continue to execute even after the process has been killed.
+
+### Privilege escalation 
+
+Python can can be used to automatically find if certain directories or files are available and writable, rather than manually checking for every available place.
+
+Python can be a very powerful language for Penetration Testers. There are countless opportunities for penetration testers when the understand the basics of the language. It's easy-to-pick-up style is wonderful for beginners to take advantage of as well. 
+
+
+
+
+### Resources
+
+There are a million ways to learn Python, but here's some of my favorites:
+
+[Youtube course](https://www.youtube.com/watch?v=rfscVS0vtbw)
+
+[Python for Pentesters (Udemy course)](https://www.udemy.com/course/python-for-pentesters/)
+
+[Violent Python (Book)](https://www.amazon.com/gp/product/B00ABY67JS/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i0)
+
+There are many other Youtube videos, Udemy courses, and books that can teach you the basics of what you need to know!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

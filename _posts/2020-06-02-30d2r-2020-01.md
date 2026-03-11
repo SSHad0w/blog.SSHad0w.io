@@ -1,0 +1,99 @@
+---
+layout: post
+title: "30D2R - January: Metasploit Review"
+date: 2020-06-02
+categories: ['30D2R']
+---
+This post is a part of my [30 Days 2 Root](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) challenge series.
+Essentially, I am trying to learn the basics of a different facet of cybersecurity each month. [Click here](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) to learn about how the challenge works, or tell me what I should study next!
+
+In January, I knew I had a little bit of experience by watching Ippsec videos in the past, so I put them to work by trying to exploit the easier machines on HTB. I knew I didn't have much experience with custom exploitation, so a good starting point would be learning how to use Metasploit properly.
+
+### **What is Metasploit?**
+
+When Ethical hackers and cybercriminals exploit or "hack" a computer, they have to write some sort of malware or "exploit" that gives them control over the victim machine. This type of control is often known as a "Remote shell". Depending on the security practices of the victim, this malware can be difficult to create. Once it is created, many hackers keep the file for later use to avoid reinventing the wheel on similar machines in the future. Metasploit is the culmination of these exploits [(and many more offensively-focused modules)](https://blogvaronis2.wpengine.com/wp-content/uploads/2019/08/metasploit-guide-benefits.png). It is constantly being updated with new exploits. This enables hackers to search through the library of exploits first before creating something that's already been done. Its ease of use also allows beginners to use exploits written by more experienced people. This is a powerful tool that is often used in beginner CTFs, and hacking bootcamps that can help novices understand the basic methodology of of an attacker.
+
+### **What did I learn?**
+
+Even though I had used Metasploit prior to January, I still took a bit of a refresher course, and I found out some new things. 
+
+
+0) How to stage payloads and why payloads sometimes need to be staged
+
+1) How to use the search function (and combine with Searchsploit)
+
+2) What the multi/handler actually does
+
+3) Metasploit has its own listener
+
+4) Shell commands 
+
+5) The difference between custom exploitation and Metasploit
+
+### **How to stage payloads and why payloads sometimes need to be staged**
+
+The payload of an exploit is the file that actually goes on the victim machine. Staging payloads essentially breaks them up into "byte-sized bits" (see what I did there?) to ensure the each step of exploitation goes smoothly. 
+
+[The official Rapid7 documentation](https://blog.rapid7.com/2015/03/25/stageless-meterpreter-payloads/)
+
+[Another great in-depth guide about payload staging](https://www.helloitsliam.com/2016/02/10/understanding-metasploit-payloads/)
+
+Staging payloads can make an attacker less "noisy". Which means that it creates less security alerts/network traffic than an unstaged payload, further preserving the stealth of attackers.
+
+
+
+
+### **How to use the search function (and combine with Searchsploit)**
+
+Metasploit can be very daunting at first, and lots of people see it being used online, but don't know how to use it from the start on their own. After some reconnaissance, an attacker may be able to find out the name and version of some of the services being used by the victim so they search online to see if there are any known exploits for that version. 
+
+This can be done using a few different methods.
+
+* The internet 
+* Searchsploit
+* Metasploit
+
+Today we'll cover the last two, since the both cover the Exploit-DB database. If Searchsploit is installed, the attacker can pass the argument ```Searchsploit service 2.0```
+directly into the terminal and it will give an output that shows all the exploits related to that service and version.
+
+Using the search function in Metasploit works in a similar way.
+
+Once the MSFconsole is up, there's a few routes that can be taken.
+
+* If you know what you're looking for, type in the word "search" and whatever module you're looking for.
+
+* If you're not completely sure, you can type in "search" + the type of module you need.
+
+* Or if you just want to see what Metasploit has to offer, a great way to do this is to search by type.
+
+
+### **What the multi/handler actually does**
+
+If you've ever seen a Metasploit tutorial, you've probably seen someone using the exploit /multi/handler. While this is a good practice while using Metasploit, no one explains why it's used. 
+
+The multi handler essentially treats outside payloads as if they're native to Metasploit to make life a little easier for the user. [This post tells a bit more about how much easier using the multi handler does.](https://security.stackexchange.com/questions/221239/metasploit-does-the-multi-handler-sends-the-payload-or-just-listens-for-conne) 
+
+
+
+### **Metasploit has its own listener**
+
+When a payload is deployed, it often has instructions to "reach out" and connect to the attacker's machine. This is known as a "reverse shell". Metasploit has its own listeners to "look out" for the attacking machine's signal. Metasploit does do this on its own, but I personally prefer netcat.
+
+
+
+### **Shell commands**
+First of all, if you see this screen, congrats on getting a shell!! Even if you had a lot of help, it is an amazing feeling to have control over another computer, and you should be proud of your work. Please only use your newfound knowledge in an ethical manner! 
+
+There are lots of options once you have dropped into a Meterpreter shell. Some of the most powerful ones can take screenshots, escalate privileges, or even dump the call log if Meterpreter is connected to a mobile phone! 
+
+
+### **The difference between custom exploitation and Metasploit**
+
+Even though Metasploit is a powerful tool, custom exploitation is much more powerful, and [much harder to accomplish.](https://metasploit.help.rapid7.com/docs/manual-exploitation) 
+
+
+### **Overview** 
+
+Overall, the Metasploit project is a very versatile tool for all levels of experience, but is especially easy to learn for beginners. 
+
+Spend some time with some of the beginner labs on [HackTheBox](hackthebox.eu/), [TryHackMe](https://tryhackme.com/), or the [OverTheWireCTF](https://overthewire.org/wargames/) to learn more about how Metasploit works.
