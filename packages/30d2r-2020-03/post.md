@@ -1,0 +1,111 @@
+---
+layout: post
+title: "30D2R - March: Bug Bounty Basics"
+date: 2020-06-21
+categories: ['30D2R']
+---
+This post is a part of my [30 Days 2 Root](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) challenge series.
+Essentially, I am trying to learn the basics of a different facet of cybersecurity each month. [Click here](https://dev.to/sshad0w/30-days-to-root-challenge-introduction-3idp) to learn about how the challenge works, or tell me what I should study next!
+
+## Why is Bug Bounty needed?
+
+Nowadays, every organization needs a website to reach further audiences. Businesses need more people to see their product, nonprofits need a place to accept donations, and schools and governments can register people in their systems without having to wait in long lines. Websites and apps have become the cornerstone of our society. We order products and services on them, we trust they're they __only__ ones with our private information like passwords or [PII](https://www.google.com/search?&q=define+pii) that could allow someone steal your identity. Sometimes we even give them access to our cameras, microphone and contacts to enable full functionality. 
+
+
+What would happen if an attacker could access **_all_** of this? 
+
+This is why organizations need their WebApp assets tested. Needless to say, this skill is in _extremely_ high demand in the age of websites being the point of contact and point of sale for most companies. To ensure the privacy and safety of their users, these organizations start a bug bounty program.
+
+## What is Bug Bounty?
+
+When companies start a bounty program, they typically partner with a platform that hosts their bounty program. Some larger companies host and manage their program on their own, but most use a bounty platform like [Hackerone](https://www.hackerone.com/) or [Bugcrowd](www.Bugcrowd.com) to host the program.
+
+The program owners establish a scope, prices for bounties and any other information the researchers may need for their testing such as login information for a tester account.
+
+After the program is posted, freelance security researchers test the assets in scope until they find a vulnerability. Once a vulnerability is found, the researcher reports it to the security management team, and the team triages the report. 
+
+## Platforms
+
+There are many bug bounty platforms for bug bounty. The two biggest ones are [Hackerone](https://www.hackerone.com/) and [Bugcrowd](www.Bugcrowd.com). These platforms do have a few differences, but for the most part they both allow researchers to chose from a collection of bounty programs and start hacking as soon as they sign up.
+
+Just because Hackerone and Bugcrowd are the most popular platforms, that doesn't mean that there aren't other ones out there. Most larger companies have a web page or an email specifically designed for submitting bugs. If you find a bug accidentally, make sure that you check to see if the organization has a bounty program. Even if they don't, still submit the bug to an official email address owned by the organization. 
+
+### Private programs
+
+When a user on a platform has enough clout (which is gained by successfully submitting quality reports and triaging bugs successfully), sometimes they may earn an invite into a private program. 
+
+Private programs are exactly like public programs, but with less researchers involved. Private programs are typically invite-only. 
+
+#### How private programs benefit organizations:
+
+* Researchers with specific skill sets can be invited into the program to test in technologies that they're already familiar with
+
+* There are less researchers to work with, so the triage team and the researchers can create better relationships and and more attention can be given to specific researchers.
+
+* If the testing environment contains proprietary or secret information, the organization can control who does and doesn't have access to it (Sometimes this can mean that NDAs will be signed or background checks will be run prior to joining) 
+
+
+
+#### How private programs benefit researchers:
+
+* A smaller amount of people allows for more money to be paid out to each bounty researcher
+
+* A large problem in public programs is that lots of people have the the same idea so they send in a report about exploiting the same vulnerability 
+
+* A smaller amount of people in programs allows the researcher to be heard and their bugs can be addressed faster. 
+
+
+* Organizations can also raise and lower Bounty prices to give incentive. Especially if a new feature has been added recently.
+
+
+
+
+## Methodology
+
+There are many different methodologies for hunting bugs. The only requirement is understanding how a website works and having a mindset of how to subvert security protocols or access things that shouldn't be available. 
+
+Here's a few methodologies I've heard while researching 
+
+
+* Learn a single bug type and look for it on every program. Once you've gotten good at it, move on to another.
+
+* Read the OWASP top 10, learn how to identify and exploit the entire list, then look for those bugs in every platform. 
+
+* Enroll in a bug Bounty bootcamp/course and follow the instructor
+
+## Typical bugs
+
+Every year, the most common bug types are recorded and culminated into a list called the OWASP top ten. It consists of the top ten vulnerabilities in the last year. These are typically the most common vulnerability in the year following. 
+
+https://owasp.org/www-project-top-ten/
+
+*** NOTE: Lots of people use this strategy, if you decide to follow this strategy, you will find lots of bugs at the expense of finding out others had already found them most of the time. 
+
+## Automation
+
+Lots of the time, manually enumerating a website take a long time. Clicking every button, visiting every page and every single input field can be tedious and slow. This slowness can also lead to having duplicates, which is extremely frustrating.
+
+The way to solve this is automation. why spend 30 minutes looking for a possible xss when you can spend 30 seconds running a script that tells you if its there and instantly and submits the report? 
+
+This is why scripting is such a powerful tool that separates intermediate and advanced hackers. The sooner you learn scripting, the faster you become an effective and efficient hacker. 
+
+## How to generate a quality report 
+
+* SCREENSHOTS, SCREENSHOTS, SCREENSHOTS. Providing a quality proof of concept with a clear video or a step-by-step guide how to exploit the bug. Taking __extensive__ notes helps a lot with this.
+
+* Be respectful and professional. You're still talking to real people who are trying to improve the security posture of the internet. Needless to say, being rude probably wouldn't help the amount of bounty you earn. 
+
+* Explain the __impact__ of the bug! This is a step lots of people miss. Explain how the bug could impact the organization and how they can triage the issue. As I read on the [Hackerone blog](https://www.hackerone.com/blog), a "User database leak means a lot more to Pornhub than it does to Twitter". Anything that deals with money, passwords or names has lots of impact.
+
+[Here's a good video by Bugcrowd on quality report generation](https://www.bugcrowd.com/resources/webinars/how-to-make-a-good-submission/)
+
+The bug bounty life is not easy. It requires lots of discipline and hard work to learn the skills, apply them in a practical situation, and write about them in a way in which someone else will understand. That is **not** easy at the beginning. Persistence goes a long way when deciding to become a bug bounty hunter. 
+
+
+
+
+
+
+
+
+
